@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../src/TooManyRequests/index.tsx"],"names":[],"mappings":";;;AAAA,wDAAyD;AACzD,0CAA4C;AAE5C,MAAa,oBAAqB,SAAQ,wBAAa;IACnD;QACI,KAAK,CAAC;YACF,IAAI,EAAE,iBAAS,CAAC,iBAAiB;YACjC,OAAO,EAAE,mBAAmB;SAC/B,CAAC,CAAC;IACP,CAAC;CACJ;AAPD,oDAOC"}
