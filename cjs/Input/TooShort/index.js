@@ -7,7 +7,8 @@ class ErrorInputTooShort extends Fenextjs_1.ErrorFenextjs {
     constructor(d) {
         super({
             code: Error_1.ErrorCode.INPUT_TOO_SHORT,
-            message: `Input Too Short${d?.min ? `, min: ${d?.min}` : ""}`,
+            message: d?.message ??
+                `Input Too Short${d?.min ? `, min: ${d?.min}` : ""}`,
             input: d?.input,
         });
     }

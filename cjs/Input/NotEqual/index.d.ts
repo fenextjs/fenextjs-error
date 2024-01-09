@@ -3,5 +3,6 @@ export declare class ErrorInputNotEqual extends ErrorFenextjs {
     constructor(d?: {
         input?: string;
         equal?: any;
+        message?: string;
     });
 }

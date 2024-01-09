@@ -7,7 +7,8 @@ class ErrorInputLength extends Fenextjs_1.ErrorFenextjs {
     constructor(d) {
         super({
             code: Error_1.ErrorCode.INPUT_LENGTH,
-            message: `Input not length${d?.length ? `, length: ${d?.length}` : ""}`,
+            message: d?.message ??
+                `Input not length${d?.length ? `, length: ${d?.length}` : ""}`,
             input: d?.input,
         });
     }

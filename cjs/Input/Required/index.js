@@ -7,7 +7,7 @@ class ErrorInputRequired extends Fenextjs_1.ErrorFenextjs {
     constructor(d) {
         super({
             code: Error_1.ErrorCode.INPUT_REQUIRED,
-            message: "Input Required",
+            message: d?.message ?? "Input Required",
             input: d?.input,
         });
     }

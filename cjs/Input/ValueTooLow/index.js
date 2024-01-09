@@ -7,7 +7,8 @@ class ErrorInputValueTooLow extends Fenextjs_1.ErrorFenextjs {
     constructor(d) {
         super({
             code: Error_1.ErrorCode.INPUT_VALUE_TOO_LOW,
-            message: `Input Value Too Low${d?.min ? `, min: ${d?.min}` : ""}`,
+            message: d?.message ??
+                `Input Value Too Low${d?.min ? `, min: ${d?.min}` : ""}`,
             input: d?.input,
         });
     }

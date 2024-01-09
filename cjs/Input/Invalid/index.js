@@ -7,7 +7,7 @@ class ErrorInputInvalid extends Fenextjs_1.ErrorFenextjs {
     constructor(d) {
         super({
             code: Error_1.ErrorCode.INPUT_INVALID,
-            message: "Invalid Input",
+            message: d?.message ?? "Invalid Input",
             input: d?.input,
         });
     }

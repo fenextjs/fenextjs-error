@@ -7,7 +7,8 @@ class ErrorInputOutOfRange extends Fenextjs_1.ErrorFenextjs {
     constructor(d) {
         super({
             code: Error_1.ErrorCode.INPUT_OUT_OF_RANGE,
-            message: `Input Out of Range${d?.range ? `, range: ${JSON.stringify(d?.range)}` : ""}`,
+            message: d?.message ??
+                `Input Out of Range${d?.range ? `, range: ${JSON.stringify(d?.range)}` : ""}`,
             input: d?.input,
         });
     }

@@ -3,5 +3,6 @@ export declare class ErrorInputOutOfRange extends ErrorFenextjs {
     constructor(d?: {
         input?: string;
         range?: number[];
+        message?: string;
     });
 }

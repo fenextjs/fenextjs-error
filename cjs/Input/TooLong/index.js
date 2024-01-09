@@ -7,7 +7,8 @@ class ErrorInputTooLong extends Fenextjs_1.ErrorFenextjs {
     constructor(d) {
         super({
             code: Error_1.ErrorCode.INPUT_TOO_LONG,
-            message: `Input Too Long${d?.max ? `, max: ${d?.max}` : ""}`,
+            message: d?.message ??
+                `Input Too Long${d?.max ? `, max: ${d?.max}` : ""}`,
             input: d?.input,
         });
     }

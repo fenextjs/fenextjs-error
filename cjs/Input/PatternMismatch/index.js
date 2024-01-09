@@ -7,7 +7,7 @@ class ErrorInputPatternMismatch extends Fenextjs_1.ErrorFenextjs {
     constructor(d) {
         super({
             code: Error_1.ErrorCode.INPUT_PATTERN_MISMATCH,
-            message: "Input Pattern Mismatch",
+            message: d?.message ?? "Input Pattern Mismatch",
             input: d?.input,
         });
     }

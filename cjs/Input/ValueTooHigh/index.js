@@ -7,7 +7,8 @@ class ErrorInputValueTooHigh extends Fenextjs_1.ErrorFenextjs {
     constructor(d) {
         super({
             code: Error_1.ErrorCode.INPUT_VALUE_TOO_HIGH,
-            message: `Input Value Too High${d?.max ? `, max: ${d?.max}` : ""}`,
+            message: d?.message ??
+                `Input Value Too High${d?.max ? `, max: ${d?.max}` : ""}`,
             input: d?.input,
         });
     }
