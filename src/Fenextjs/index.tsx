@@ -7,6 +7,7 @@ export interface ErrorFenextjsProps<D> extends ErrorProps<D> {
 export class ErrorFenextjs<D = any> extends Error {
     code: ErrorCode;
     message: string;
+    msg: string;
     input?: string;
     data?: D;
 
@@ -15,6 +16,7 @@ export class ErrorFenextjs<D = any> extends Error {
         this.code = code ?? ErrorCode.ERROR;
         this.name = code ?? ErrorCode.ERROR;
         this.message = (message ?? "") + (input ? ` [${input}]` : "");
+        this.msg = message ?? "";
         this.data = data;
         this.input = input;
     }

@@ -5,6 +5,7 @@ export interface ErrorFenextjsProps<D> extends ErrorProps<D> {
 export declare class ErrorFenextjs<D = any> extends Error {
     code: ErrorCode;
     message: string;
+    msg: string;
     input?: string;
     data?: D;
     constructor({ code, data, message, input }: ErrorFenextjsProps<D>);

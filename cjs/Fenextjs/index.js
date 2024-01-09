@@ -5,6 +5,7 @@ const Error_1 = require("fenextjs-interface/cjs/Error");
 class ErrorFenextjs extends Error {
     code;
     message;
+    msg;
     input;
     data;
     constructor({ code, data, message, input }) {
@@ -12,6 +13,7 @@ class ErrorFenextjs extends Error {
         this.code = code ?? Error_1.ErrorCode.ERROR;
         this.name = code ?? Error_1.ErrorCode.ERROR;
         this.message = (message ?? "") + (input ? ` [${input}]` : "");
+        this.msg = message ?? "";
         this.data = data;
         this.input = input;
     }
