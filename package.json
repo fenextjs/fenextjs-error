@@ -1,6 +1,6 @@
 {
     "name": "fenextjs-error",
-    "version": "2.0.0",
+    "version": "3.0.0",
     "description": "",
     "main": "./cjs/index.js",
     "module": "./cjs/index.js",
@@ -19,7 +19,7 @@
         "remove-bun-lockb":"rm -r bun.lockb",
         "remove-node-module":"rm -r node_modules",
         "remove":"npm run remove-node-module && npm run remove-bun-lockb",
-        "update-package":"ncu -u !next",
+        "update-package": "ncu -u '/fenextjs.*$/'",
         "update":"npm run update-package && npm run remove && npm run bun-i && npm run flb",
         "u":"npm run update"
     },
@@ -40,7 +40,7 @@
     },
     "homepage": "https://github.com/franciscoblancojn/fenextjs-error#readme",
     "dependencies": {
-        "fenextjs-interface": "^2.0.0"
+        "fenextjs-interface": "4.0.0"
     },
     "files": [
         "cjs",
@@ -50,14 +50,14 @@
         "@types/node": "20.11.16",
         "@types/react": "18.2.55",
         "@types/react-dom": "18.2.19",
-        "@typescript-eslint/eslint-plugin": "^6.21.0",
-        "@typescript-eslint/parser": "^6.21.0",
+        "@typescript-eslint/eslint-plugin": "6.21.0",
+        "@typescript-eslint/parser": "6.21.0",
         "eslint": "8.56.0",
-        "npm-check-updates": "^16.14.14",
-        "prettier": "^3.2.5",
-        "ts-loader": "^9.5.1",
-        "tslib": "^2.6.2",
-        "typedoc": "^0.25.7",
-        "typescript": "^5.3.3"
+        "npm-check-updates": "16.14.14",
+        "prettier": "3.2.5",
+        "ts-loader": "9.5.1",
+        "tslib": "2.6.2",
+        "typedoc": "0.25.7",
+        "typescript": "5.3.3"
     }
 }
