@@ -9,7 +9,7 @@ class ErrorFenextjs extends Error {
     msg;
     input;
     data;
-    constructor({ code, data, message, input }) {
+    constructor({ code, data, message, input, content, }) {
         super(message);
         this.code = code ?? Error_1.ErrorCode.ERROR;
         this.name = code ?? Error_1.ErrorCode.ERROR;
@@ -17,7 +17,7 @@ class ErrorFenextjs extends Error {
         this.msg = message ?? "";
         this.data = data;
         this.input = input;
-        this.input = input;
+        this.content = content;
     }
 }
 exports.ErrorFenextjs = ErrorFenextjs;

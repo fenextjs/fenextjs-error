@@ -12,7 +12,13 @@ export class ErrorFenextjs<D = any> extends Error {
     input?: string;
     data?: D;
 
-    constructor({ code, data, message, input,content }: ErrorFenextjsProps<D>) {
+    constructor({
+        code,
+        data,
+        message,
+        input,
+        content,
+    }: ErrorFenextjsProps<D>) {
         super(message);
         this.code = code ?? ErrorCode.ERROR;
         this.name = code ?? ErrorCode.ERROR;
