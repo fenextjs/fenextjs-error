@@ -4,6 +4,7 @@ exports.ErrorFenextjs = void 0;
 const Error_1 = require("fenextjs-interface/cjs/Error");
 class ErrorFenextjs extends Error {
     code;
+    content;
     message;
     msg;
     input;
@@ -15,6 +16,7 @@ class ErrorFenextjs extends Error {
         this.message = (message ?? "") + (input ? ` [${input}]` : "");
         this.msg = message ?? "";
         this.data = data;
+        this.input = input;
         this.input = input;
     }
 }
